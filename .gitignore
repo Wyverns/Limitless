@@ -6,8 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
-# misc
+# editor config
+.vscode
 .idea
+*.replit
 
 # Distribution / packaging
 .Python

@@ -1,12 +1,13 @@
 import discord
 from discord.ext import commands
 import json
+from os import getenv
 
 with open('cogs.json', 'r') as cog_file:
     cogs = json.load(cog_file)
 
 
-class botclass(commands.Bot):
+class BotClass(commands.Bot):
     def __init__(self, **kwargs):
         self.token = kwargs.pop('token')
         super().__init__(**kwargs)
@@ -17,17 +18,23 @@ class botclass(commands.Bot):
 
     def starter(self):
         try:
+            self.load_cogs()
             self.run(self.token)
         except Exception as e:
             print('Failed to connect to discord.', e)
             exit()
 
+
 bot_credentials = {
-    "token":"WIP-NO-TOKEN-YET",
-    "command_prefix":"!"
+    "token": getenv('TOKEN'),
+    "command_prefix": "!"
 }
 
-bot = botclass(**bot_credentials)
+bot = BotClass(**bot_credentials)
+
+@bot.event
+async def on_ready():
+    print('Bot connected')
 
 if __name__ == '__main__':
     bot.starter()

@@ -2,6 +2,7 @@
   {
     "Cogname": "Examplecog",
     "Author": "Funnylimericks",
-    "path-to-cog": "cogs.examplecog"
+    "path-to-cog": "cogs.pre.examplecog",
+    "discord_id": "701494621162963044"
   }
 ]
