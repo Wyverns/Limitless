@@ -5,9 +5,9 @@
   <img src="static/image0.jpeg"/>
 </p>
 
-Join our discord [here](https://discord.gg/SQ5PNy6M7F)!
+#### <div align="center">Join our discord [here](https://discord.gg/gTkG3SrzbH)<div align="center"/>
 
-## <div align="center">How to contribute: (Python 3.8.5 or greater.)<div align="center">
+## <div align="center">How to contribute: (Python 3.8.5 or greater.)<div align="center"/>
 
 - ### Start by cloning the repository by:  
   Windows:
