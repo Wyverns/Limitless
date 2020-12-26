@@ -1,8 +1,13 @@
-# Project-No-Limit
+# <div align="center">Project-No-Limit<div align="center">
 ---
+
+<p align="center">
+  <img src="static/image0.jpeg"/>
+</p>
+
 Join our discord [here](https://discord.gg/SQ5PNy6M7F)!
 
-## How to contribute: (Python 3.8.5 or greater.)
+## <div align="center">How to contribute: (Python 3.8.5 or greater.)<div align="center">
 
 - ### Start by cloning the repository by:  
   Windows:
