@@ -38,7 +38,7 @@
   python3 -m venv env
   python3 -m pip install -U -r requirements.txt
   ```
-  Alternatively if your on windows you can run our pre-made [setup.bat](setup.bat) file (you will still need to install required packages.)
+  Alternatively if your on windows you can run our pre-made [setup.bat](setup.bat) file (It may say windows protected your pc, we are not trying to give you a virus I swear! You can look at the contents if you want [here](setup.bat))(you will still need to install required packages.)
   ```bash
   setup
   ```
