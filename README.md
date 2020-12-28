@@ -38,6 +38,10 @@
   python3 -m venv env
   python3 -m pip install -U -r requirements.txt
   ```
+  Alternatively if your on windows you can run our pre-made [setup.bat](setup.bat) file (you will still need to install required packages.)
+  ```bash
+  setup
+  ```
 - ### Next add your cog to [cogs.json](cogs.json) using this format:  
   ```json
   [
