@@ -1,6 +1,9 @@
 from discord.ext import commands
 import json
-from os import getenv
+import configparser
+
+config = configparser.ConfigParser()
+config.read('secrets.cfg')
 
 with open('cogs.json', 'r') as cog_file:
     cogs = json.load(cog_file)
@@ -32,7 +35,7 @@ class BotClass(commands.Bot):
 
 
 bot_credentials = {
-    "token": getenv('TOKEN'),
+    "token": config['TOKENS']['bottoken'],
     "command_prefix": "!"
 }
 
@@ -42,12 +45,6 @@ bot = BotClass(**bot_credentials)
 @bot.event
 async def on_ready():
     print('Bot connected')
-
-
-@bot.event
-async def on_message(message):
-    if message.author.id == bot.id:
-        return
 
 
 if __name__ == '__main__':

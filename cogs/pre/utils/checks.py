@@ -1,8 +1,11 @@
 from discord.ext import commands
-from runner import BotClass
+from cogs.pre.utils.errors import NotAContributorError
 
 
 def is_cog_contributor():
     async def predicate(ctx):
-        return str(ctx.author) in
+        if str(ctx.author.id) in ctx.bot.contributors:
+            return True
+        else:
+            raise NotAContributorError()
     return commands.check(predicate)
