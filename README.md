@@ -49,6 +49,7 @@
       "Cogname": "Examplecog",
       "Author": "your name (excluding tag)",
       "path-to-cog": "path.to.cog",
+      "description": "command description",
       "discord_id": "your-id"
     }
   ]
