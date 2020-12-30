@@ -12,15 +12,15 @@
 - ### Start by cloning the repository by:  
   Windows:
   ```bash
-  git clone https://github.com/Elflanded/Project-No-Limit
+  git clone https://github.com/Wyverns/Limitless
   ```
   macOS:
   ```bash
-  $ git clone https://github.com/Elflanded/Project-No-Limit
+  $ git clone https://github.com/Wyverns/Limitless
   ```
   Linux
   ```bash
-  $ git clone https://github.com/Elflanded/Project-No-Limit
+  $ git clone https://github.com/Wyverns/Limitless
   ```
 - ### Next set up your virtual environment:
   Windows:
