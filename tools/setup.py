@@ -2,8 +2,10 @@ import configparser
 config = configparser.ConfigParser()
 
 print('Creating files...')
-# creates all the information inside of the file.
+
+# Creates all the information inside of the file.
 config['TOKENS'] = {'BotToken': 'Your token here, https://discord.com/developers'}
+config['PREFIXES'] = {'BotPrefix': 'Your prefix here.'}
 
 try:
     with open('secrets.cfg', 'x') as secrets:

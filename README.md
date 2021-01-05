@@ -28,21 +28,19 @@
   python -m venv venv
   pip install -U -r requirements.txt
   ```
-  macOS:
+  macOS & Linux:
   ```bash
-  python3 -m venv env
+  python3 -m venv venv
   python3 -m pip install -U -r requirements.txt
   ```
-  Linux:
-  ```bash
-  python3 -m venv env
-  python3 -m pip install -U -r requirements.txt
-  ```
-  Alternatively if your on windows you can run our pre-made [setup.bat](setup.bat) file (It may say windows protected your pc, we are not trying to give you a virus I swear! You can look at the contents if you want [here](setup.bat))(you will still need to install required packages.)
+
+  Alternatively if you're on windows you can run our pre-made [setup.bat](setup.bat) file! (It may say windows protected your PC, but it's safe. Check the contents [here](setup.bat) if you want. **You will still need to download the packages**)
+  
   ```bash
   setup
   ```
-- ### Next add your cog to [cogs.json](cogs.json) using this format:  
+  
+- ### Next, you'll want to add your cog to [cogs.json](cogs.json) using this format:  
   ```json
   [
     {
@@ -53,7 +51,10 @@
       "discord_id": "your-id"
     }
   ]
-  ```
+ - ## Examples of cogs
+ An example can be found in [the example cog](cogs/pre)
+ Making your cog is really easy, and anyone can do it!
+  
 - ### Lastly compare the branches and make a pull request! 
 
 #### Things to note:
