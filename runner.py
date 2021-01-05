@@ -1,5 +1,5 @@
 # This file is for running the bot, and handling some configs. If you want to add your Cog, this might not be the correct place to be.
-# Unless if you are adding something to the bot class, e.g. a list, please refer to the README.md file.
+# Unless you are adding something to the bot class, e.g. a list, please refer to the README.md file.
 
 from discord.ext import commands
 import json
@@ -46,7 +46,7 @@ class BotClass(commands.Bot):
 
 bot_credentials = {
     "token": config['TOKENS']['bottoken'],
-    "command_prefix": config['PREFIXES']['botprefixes']
+    "command_prefix": '!'
 }
 
 bot = BotClass(**bot_credentials)
