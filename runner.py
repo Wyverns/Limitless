@@ -46,7 +46,7 @@ class BotClass(commands.Bot):
 
 bot_credentials = {
     "token": config['TOKENS']['bottoken'],
-    "command_prefix": "!"
+    "command_prefix": config['PREFIXES']['botprefixes']
 }
 
 bot = BotClass(**bot_credentials)
