@@ -16,13 +16,11 @@ with open('cogs.json', 'r') as cog_file:
 
 # The basic Bot class.
 class BotClass(commands.Bot):
-    # The __init__ is where you want to add your vars defined in the bot, as shown in self.contributors' defining.
     def __init__(self, **kwargs):
         self.token = kwargs.pop('token')
-        self.contributors = None # The contributors list defined in the example cog. You can add a variable yourself too!
+        self.contributors = None
         super().__init__(**kwargs)
-        
-    # A function to run before starting the bot.
+
     def before_starter(self):
         self.load_cogs()
         self.get_contributors()
@@ -39,7 +37,7 @@ class BotClass(commands.Bot):
         for cog in cogs:
             self.load_extension(cog['path-to-cog']) # path-to-cog is defined in cogs.json, for each cog! Remember to add the correct path to it.
 
-    def starter(self): # Starting the bot.
+    def starter(self):
         self.before_starter()
         self.run(self.token)
 
@@ -51,7 +49,7 @@ bot_credentials = {
 
 bot = BotClass(**bot_credentials)
 
-# The basic on_ready event.
+
 @bot.event
 async def on_ready():
     print('Bot connected')
