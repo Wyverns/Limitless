@@ -57,6 +57,9 @@
   
 - ### Lastly compare the branches and make a pull request! 
 
+## F.A.Q: 
+(Coming soon)
+
 #### Things to note:
 - We will reject your pull request if your cog contains nsfw commands
 - Do not expect us to merge if your code is unstable.
