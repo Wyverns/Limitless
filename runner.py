@@ -1,3 +1,5 @@
+# This file is for running the code, and handling some configs. If you want to add your Cog, this is not the correct place to be. Please refer to the README.md file.
+
 from discord.ext import commands
 import json
 import configparser
